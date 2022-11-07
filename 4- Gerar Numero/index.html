@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <div> <!-- Dentro desta DIV contém o CSS utilizado na Tabela-->
+    <style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 20%;
+        }
+        
+        td, th {
+          border: 1px solid #dddddd;
+          text-align: center;
+          padding: 5px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #dddddd;
+        }
+        </style>
+    </div>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <title>Gerar Números Aleatórios</title>
+</head>
+<body>
+    <h2>Escolha o seu dado para rolar</h2>
+
+<table>
+  <tr>
+    <th>Dado</th>
+    <th>Resultado</th>
+    <th>Clique no Botão</th>
+  </tr>
+  <tr>
+    <td>1d4</td>
+    <td><label id="1d4"></label></td>
+    <td><button onclick="roll4()">Resultado</button></td>
+  </tr>
+  <tr>
+    <td>1d6</td>
+    <td><label id="1d6"></label></td>
+    <td><button onclick="roll6()">Resultado</button></td>
+  </tr>
+  <tr>
+    <td>1d8</td>
+    <td><label id="1d8"></label></td>
+    <td><button onclick="roll8()">Resultado</button></td>
+  </tr>
+  <tr>
+    <td>1d10</td>
+    <td><label id="1d10"></label></td>
+    <td><button onclick="roll10()">Resultado</button></td>
+  </tr>
+  <tr>
+    <td>1d12</td>
+    <td><label id="1d12"></label></td>
+    <td><button onclick="roll12()">Resultado</button></td>
+  </tr>
+  <tr>
+    <td>1d20</td>
+    <td><label id="1d20"></label></td>
+    <td><button onclick="roll20()">Resultado</button></td>
+  </tr>
+</table>
+</body>
+</html>
